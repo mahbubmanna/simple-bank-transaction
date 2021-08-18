@@ -10,7 +10,7 @@ document.getElementById('login-submit').addEventListener('click', function () {
     const userPassword = passwordField.value;
 
     //checking email and pass
-    if (userEmail == 'sontan@baap.com' && userPassword == 'secret') {
+    if (userEmail == 'son@family.com' && userPassword == 'secret') {
         window.location.href = 'banking.html';
     }
 
