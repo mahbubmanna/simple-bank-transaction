@@ -32,6 +32,7 @@ function updateBalance() {
     document.getElementById('balance-total').innerText = balance;
 }
 
+//handle deposit
 document.getElementById('deposit-button').addEventListener('click', function () {
     const amount = getInputValue('deposit-input');
 
@@ -50,5 +51,8 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
     if (amount > 0 && amount <= balance) {
         updateTotal('withdraw-total', amount);
         updateBalance();
+    }
+    else if (amount > 0 && amount > balance) {
+        alert("You don't have enough balance");
     }
 })
