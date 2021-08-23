@@ -53,6 +53,6 @@ document.getElementById('withdraw-button').addEventListener('click', function ()
         updateBalance();
     }
     else if (amount > 0 && amount > balance) {
-        alert("You don't have enough balance");
+        alert("Your balance is not enough for this transaction");
     }
 })
